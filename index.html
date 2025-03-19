@@ -7,12 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Discover Your Next Adventure</h1>
-    <p>Find the perfect destination based on your preferences!</p>
-  </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
 
-  <main>
+  <!-- Home Page -->
+  <section id="home">
+    <header>
+      <h1>Discover Your Next Adventure</h1>
+      <p>Find the perfect destination based on your preferences!</p>
+    </header>
+
+    <!-- Introduction -->
+    <div class="introduction">
+      <h2>Welcome to Travel Recommendations</h2>
+      <p>Plan your dream vacation with our personalized travel suggestions. Whether you're looking for beaches, temples, or country-specific destinations, we've got you covered!</p>
+    </div>
+
     <!-- Preference Selection -->
     <section id="preferences">
       <h2>What are you looking for?</h2>
@@ -38,8 +54,78 @@
       <h2>Recommended Destinations</h2>
       <div id="destinationList" class="destination-grid"></div>
     </section>
-  </main>
 
+    <!-- Beach Recommendation -->
+    <section id="beach-recommendation">
+      <h2>Top Beach Destinations</h2>
+      <div class="image-grid">
+        <div>
+          <img src="https://via.placeholder.com/300x200?text=Maldives" alt="Maldives">
+          <p>Maldives: Crystal-clear waters and white sandy beaches.</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/300x200?text=Bora+Bora" alt="Bora Bora">
+          <p>Bora Bora: Overwater bungalows and stunning lagoons.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Temple Recommendation -->
+    <section id="temple-recommendation">
+      <h2>Top Temple Destinations</h2>
+      <div class="image-grid">
+        <div>
+          <img src="https://via.placeholder.com/300x200?text=Angkor+Wat" alt="Angkor Wat">
+          <p>Angkor Wat: A UNESCO World Heritage Site in Cambodia.</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/300x200?text=Golden+Temple" alt="Golden Temple">
+          <p>Golden Temple: A spiritual and architectural marvel in India.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Country Recommendation -->
+    <section id="country-recommendation">
+      <h2>Top Country Destinations</h2>
+      <div class="image-grid">
+        <div>
+          <img src="https://via.placeholder.com/300x200?text=Japan" alt="Japan">
+          <p>Japan: A blend of tradition and modernity.</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/300x200?text=Italy" alt="Italy">
+          <p>Italy: Rich history, art, and cuisine.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- About Us Page -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of travel enthusiasts dedicated to helping you discover the best destinations around the world. Our mission is to provide personalized recommendations and make your travel planning seamless and enjoyable.</p>
+    <p>With years of experience and a passion for exploration, we curate the most exciting and unique travel experiences just for you.</p>
+  </section>
+
+  <!-- Contact Us Page -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2023 Travel Recommendations. All rights reserved.</p>
   </footer>

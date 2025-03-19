@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Discover Your Next Adventure</h1>
+    <p>Find the perfect destination based on your preferences!</p>
+  </header>
+
+  <main>
+    <!-- Preference Selection -->
+    <section id="preferences">
+      <h2>What are you looking for?</h2>
+      <form id="preferenceForm">
+        <label>
+          <input type="checkbox" name="preference" value="beach"> Beach
+        </label>
+        <label>
+          <input type="checkbox" name="preference" value="mountain"> Mountain
+        </label>
+        <label>
+          <input type="checkbox" name="preference" value="city"> City
+        </label>
+        <label>
+          <input type="checkbox" name="preference" value="adventure"> Adventure
+        </label>
+        <button type="submit">Find Destinations</button>
+      </form>
+    </section>
+
+    <!-- Destination Display -->
+    <section id="destinations">
+      <h2>Recommended Destinations</h2>
+      <div id="destinationList" class="destination-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Travel Recommendations. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,25 +3,25 @@ const destinations = [
   {
     name: "Bali, Indonesia",
     description: "A tropical paradise with stunning beaches and vibrant culture.",
-    image: "https://via.placeholder.com/300x150?text=Bali",
+    image: "https://dummyimage.com/300x150?text=Bali",
     tags: ["beach", "adventure"],
   },
   {
     name: "Swiss Alps",
     description: "Breathtaking mountain views and world-class skiing.",
-    image: "https://via.placeholder.com/300x150?text=Swiss+Alps",
+    image: "https://dummyimage.com/300x150?text=Swiss+Alps",
     tags: ["mountain", "adventure"],
   },
   {
     name: "Paris, France",
     description: "The city of love, known for its art, fashion, and cuisine.",
-    image: "https://via.placeholder.com/300x150?text=Paris",
+    image: "https://dummyimage.com/300x150?text=Paris",
     tags: ["city"],
   },
   {
     name: "Queenstown, New Zealand",
     description: "Adventure capital of the world with stunning landscapes.",
-    image: "https://via.placeholder.com/300x150?text=Queenstown",
+    image: "https://dummyimage.com/300x150?text=Queenstown",
     tags: ["mountain", "adventure"],
   },
 ];

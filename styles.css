@@ -270,3 +270,302 @@ footer {
     opacity: 1;
   }
 }
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+nav ul li input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+nav ul li button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #ffeb3b;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li button:hover {
+  background: #fdd835;
+  transform: translateY(-2px);
+}
+
+/* Home Page */
+header {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.introduction {
+  padding: 40px 20px;
+  text-align: center;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.introduction h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.introduction p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Preference Form */
+#preferences {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#preferences h2 {
+  font-size: 1.8em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+#preferenceForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+#preferenceForm label {
+  background: #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#preferenceForm label:hover {
+  background: #4CAF50;
+  color: white;
+  transform: translateY(-3px);
+}
+
+#preferenceForm button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#preferenceForm button:hover {
+  background: #45a049;
+  transform: translateY(-3px);
+}
+
+/* Destination Grid */
+.destination-grid, .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.destination-card, .image-grid div {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover, .image-grid div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img, .image-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card h3, .image-grid p {
+  margin: 15px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.destination-card p, .image-grid p {
+  margin: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* About Us Page */
+#about {
+  padding: 40px 20px;
+  text-align: center;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Us Page */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contactForm label {
+  font-weight: bold;
+  color: #333;
+}
+
+#contactForm input, #contactForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#contactForm button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contactForm button:hover {
+  background: #45a049;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

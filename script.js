@@ -16,7 +16,7 @@ const destinations = [
     name: "Paris, France",
     description: "The city of love, known for its art, fashion, and cuisine.",
     image: "images/paris.png",
-    tags: ["city"],
+    tags: ["city","country"],
   },
   {
     name: "Queenstown, New Zealand",
@@ -24,11 +24,38 @@ const destinations = [
     image: "images/queenstown.png",
     tags: ["mountain", "adventure"],
   },
+  {
+    name: "Angkor Temple, Cambodia",
+    description: "Angkor Wat: A UNESCO World Heritage Site in Cambodia.",
+    image: "images/Maldives.jpeg",
+    tags: ["temple"],
+  },
+  {
+    name: "Golden Temple, India",
+    description: "Golden Temple: A spiritual and architectural marvel in India..",
+    image: "images/Bora.jpeg",
+    tags: ["temple", "adventure"],
+  },
+  {
+    name: "Country of Italy, Italy",
+    description: "Italy: Rich history, art, and cuisine.",
+    image: "images/Italy.jpeg",
+    tags: ["country"],
+  },
+  {
+    name: "Country of Japan, Japan",
+    description: "Japan: A blend of tradition and modernity.",
+    image: "images/Japan.jpeg",
+    tags: ["country"],
+  },
 ];
 
 // DOM Elements
 const preferenceForm = document.getElementById("preferenceForm");
 const destinationList = document.getElementById("destinationList");
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("searchButton");
+const clearButton = document.getElementById("clearButton");
 
 // Event Listener for Form Submission
 preferenceForm.addEventListener("submit", (e) => {
@@ -42,6 +69,21 @@ preferenceForm.addEventListener("submit", (e) => {
   );
 
   displayDestinations(filteredDestinations);
+});
+
+// Event Listener for Search Button
+searchButton.addEventListener("click", () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  const filteredDestinations = destinations.filter((destination) =>
+    destination.name.toLowerCase().includes(searchTerm)
+  );
+  displayDestinations(filteredDestinations);
+});
+
+// Event Listener for Clear Button
+clearButton.addEventListener("click", () => {
+  searchInput.value = "";
+  displayDestinations(destinations);
 });
 
 // Function to Display Destinations
